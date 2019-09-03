@@ -18,6 +18,15 @@ cnt::cnt(double _k, double _a, point_type _stratPoint, polygon_type _poly)
 	a = _a;
 	stratPoint = _stratPoint;
 	poly = _poly;
+	idParent = 0;
+}
+cnt::cnt(double _k, double _a, point_type _stratPoint, polygon_type _poly, int _idParent)
+{
+	k = _k;
+	a = _a;
+	stratPoint = _stratPoint;
+	poly = _poly;
+	idParent = _idParent;
 }
 
 cnt::~cnt()
