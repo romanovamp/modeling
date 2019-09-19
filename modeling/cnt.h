@@ -13,10 +13,12 @@ class cnt
 {
 public:
 	double a, k;
-	int idParent;
+	int idParent, idClus;
 	point_type stratPoint;
 	polygon_type poly;
 	vector <int> nearCnt;
+	vector <int> colour;
+	vector <int> idChild;
 	cnt();
 	cnt(double k, double a, point_type stratPoint, polygon_type poly);
 	cnt(double k, double a, point_type stratPoint, polygon_type poly, int idParent);
